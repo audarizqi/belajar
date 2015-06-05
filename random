@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class COBA{
+public static void main(String[] args){
+
+  int a = (int)(Math.random() *10);// acak angka dari 0-10
+  int c = 2;
+    System.out.println("--------------------------------------------------");
+    System.out.println("                      TEBAK");
+   
+	do{
+		System.out.println("Masukkan angka yang anda tebak : ");
+		
+		Scanner jawab = new Scanner (System.in);
+		int b = jawab.nextInt();
+
+		if (c > 0 ){
+			if ( b == a ){
+				System.out.println("SELAMET!!! Angka yang anda masukkan BENAR!");
+				break;}
+			else if ( b < a ){
+				System.out.println("Maaf angka yang anda masukkan terlalu KECIL.");}
+			else if ( b > a ){
+			System.out.println("Maaf angka yang anda masukkan terlalu BESAR.");}
+
+			System.out.println("    Anda Memiliki " + c + " Kesempatan Lagi");
+			c--;}
+		else{
+			
+			System.out.println("ANDA SALAH! SILAHKAN COBA LAGI");
+			;
+			break;}
+	}
+			while ( c >=0 );
+    }
+   }
