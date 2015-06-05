@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class belajar{
+	public static void main(String[]args){
+		Scanner A=new Scanner(System.in);
+		System.out.println();
+		System.out.println();
+		try{
+			int Q,W,E;
+			double Z,X;
+			String M,N;
+			
+			System.out.print("Masukan No Transaksi  :");
+			Q=Integer.parseInt(A.nextLine());
+			System.out.print("Massukan Nama          :");
+			M=A.nextLine();
+			System.out.print("Masukan Alamat        :");
+			N=A.nextLine();
+			System.out.print("Masukan Jumlah        :");
+			W=Integer.parseInt(A.nextLine());
+			System.out.print("Massukan Harga Kaos   : Rp.");
+			E=Integer.parseInt(A.nextLine());
+			
+			System.out.println("-------------------------------");
+			System.out.println("No Transaksi        :"+Q);
+			System.out.println("Nama                :"+M);
+			System.out.println("Alamat              :"+N);
+			System.out.println("Jumlah              :"+W);
+			E=E*W;
+			System.out.println("Harga Sebelum diskon:"+E+"-");
+			if(E>=50000){
+				Z=E*0.5;
+				X=E-Z;
+			System.out.println("diskon              (50%):"+Z);
+			System.out.println("Total Bayar               :"+X);
+			}
+			else{
+			System.out.println("Total Bayar                 : Rp."+E+",-");} 
+		}catch (Exception e){
+			System.out.println("Inputan salah");
+			System.out.println();
+			System.out.println();}
+	}
+}
