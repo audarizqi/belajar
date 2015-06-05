@@ -1,0 +1,81 @@
+import java.util.*;
+
+public class Bonus_Pulsa {
+	public static void main (String[] args) {
+		final double Bagi=2;
+		Scanner Q = new Scanner (System.in) ;
+		System.out.println();
+		System.out.println();
+		double J;
+		try{
+			System.out.println("=====================================");
+			System.out.println("              AUD Cell");
+			System.out.println("=====================================");
+			System.out.print("Nama pembeli              : ");
+			String NA=Q.nextLine();
+			System.out.print("Nomor pengisian           : ");
+			String NP=Q.nextLine();
+			System.out.print("Harga pembelian 		    : ");
+			int HP=Integer.parseInt (Q.nextLine());
+			System.out.print("Jumlah pembelian          : ");
+			int PD=Integer.parseInt(Q.nextLine());
+			
+			
+			System.out.println("=====================================");
+			System.out.println("              AUD Cell");
+			System.out.println("=====================================");
+			System.out.println("Nama pembeli                   : "+NA );
+			System.out.println("Nomor pengisian                : "+NP);
+			System.out.println("Harga pembelian               : Rp. "+HP+",-");
+			PD=HP/PD;
+			if(PD>=10000){
+				J=PD;
+				System.out.println("Jumlah pembelian      :Rp. "+PD+",-");
+				
+			}else if(PD>=15000){
+				J=PD/2;
+				System.out.println("Jumlah pembelian      : Rp."+PD+",-");
+				
+			}else if(PD>=20000){
+				J=PD/2;
+				System.out.println("Jumlah pembelian      : Rp."+PD+",-");
+				
+			}else if(PD>=25000){
+				J=PD/2;
+				System.out.println("Jumlah pembelian    : Rp."+PD+",-");
+				
+			}else if(PD>=30000){
+				J=PD/2;
+				System.out.println("Jumlah pembelian    :Rp. "+PD+",-");
+				
+			}else if(PD>=35000){
+				J=PD/2;
+				System.out.println("Jumlah pembelian    : Rp."+PD+",-");
+				
+			}else if(PD>=40000){
+				J=PD/2;
+				System.out.println("Jumlah pembelian    :Rp. "+PD+",-");
+				
+			}else if(PD>=45000){
+				J=PD/2;
+				System.out.println("Jumlah pembelian    :Rp. "+PD+",-");
+				
+			}else if(PD>=50000){
+				J=PD/2;
+				System.out.println("Jumlah pembelian    : Rp."+PD+",-");
+				
+			}else if(PD>=55000){
+				J=PD/2;
+				System.out.println("Jumlah pembelian    : Rp."+PD+",-");
+				
+			}else{
+			System.out.println("Selamat anda mendapatkan Bonus Sebesar      : Rp."+PD/Bagi+",-");}
+		}
+			catch (Exception e){
+			System.out.print("Inputan harus berupa angka: ");}
+			System.out.println();
+			System.out.println();			
+		
+	}
+}
+	
